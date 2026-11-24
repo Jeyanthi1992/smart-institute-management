@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Institute Management System
 
-## Getting Started
+A web-based Institute Management System built using Next.js, TypeScript, React, Tailwind CSS, and MySQL.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Smart Institute Management System helps manage institute activities through a centralized dashboard. It provides modules to manage students, teachers, courses, attendance, and fees.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Admin Login and Authentication
+- Dashboard with Summary
+- Student Management (CRUD)
+- Teacher Management (CRUD)
+- Course Management (CRUD)
+- Attendance Management
+- Fees Management
+- MySQL Database Integration
+- Responsive User Interface
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- Frontend: Next.js, React, TypeScript
+- Styling: Tailwind CSS
+- Backend: Next.js API Routes
+- Database: MySQL
+- Authentication: JWT, bcryptjs
+- Tools: VS Code, Git, GitHub
 
-To learn more about Next.js, take a look at the following resources:
+## Installation and Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   `git clone https://github.com/Jeyanthi1992/smart-institute-management.git`
 
-## Deploy on Vercel
+2. Navigate to the project folder:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   `cd smart-institute-management`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Install dependencies:
+
+   `npm install`
+
+4. Create a `.env.local` file in the root folder and configure:
+
+   ```env
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=
+   DB_NAME=smart_institute_db
+   JWT_SECRET=your_secret_key
+   ```
+
+5. Create the MySQL database named `smart_institute_db` and configure the required tables.
+
+6. Start the development server:
+
+   `npm run dev`
+
+7. Open http://localhost:3000 in your browser.
+
+## Project Status
+
+Production build completed successfully.
+
+## Developer
+
+**Jeyanthi S**
+
+GitHub: https://github.com/Jeyanthi1992
